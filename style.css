@@ -11,6 +11,16 @@ Variables
 */
 
 :root {
+  --twine: rgba(194,150,109,1);
+--log-cabin: rgba(31,36,28,1);
+--shadow: rgba(130,106,85,1);
+--kabul: rgba(86,71,57,1);
+--abbey: rgba(83,86,86,1);
+--willow-grove: rgba(95,101,93,1);
+--schooner: rgba(151,139,132,1);
+--chelsea-cucumber: rgba(141,167,100,1);
+--vesuvius: rgba(164,68,12,1);
+
   /* dark shades of primary color*/
   --clr-primary-1: hsl(205, 86%, 17%);
   --clr-primary-2: hsl(205, 77%, 27%);
@@ -95,26 +105,29 @@ a {
 
 
 ---------------------------- */
-.text-experiment {
-  background-color: #090979;
-  background-image: linear-gradient(
-    90deg,
-    /* #020024 0%, */ #090979 35%,
-    #00d4ff 100%
-  );
-  background-size: 100%;
-  padding: 10px;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
+
 
 .container {
   width: 100%;
   height: 100vh;
-  background: li
+  background: linear-gradient(rgb(95,101,93,.3), rgb(83,86,86,.3)),
+  url(https://res.cloudinary.com/dylvkdabj/image/upload/v1648871810/website%20pics%20family/nature-g7d3238b22_1920_dpibsm.jpg) center no-repeat;
+  background-size: cover;
  
+}
+
+.banner {
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.banner h1 {
+  font-size: 5rem;
+  color: #ddd;
 }
 
 
