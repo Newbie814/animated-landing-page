@@ -113,6 +113,8 @@ a {
   background: linear-gradient(rgb(95,101,93,.2), rgb(83,86,86,.2)),
   url(https://res.cloudinary.com/dylvkdabj/image/upload/v1648871810/website%20pics%20family/nature-g7d3238b22_1920_dpibsm.jpg) center no-repeat;
   background-size: cover;
+  overflow: hidden;
+  position: relative;
  
 }
 
@@ -131,6 +133,10 @@ a {
   color: #ddd;
   font-weight: 300;
   margin-bottom: 2rem;
+  animation-name: moveTextLeft;
+  animation-duration: 2.5s ;
+  
+
 }
 
 .banner span {
@@ -151,10 +157,12 @@ margin-bottom: 2rem;
 }
 
 .banner p {
-  font-size: 3.5rem;
+  font-size: 2.1rem;
   font-weight: 300;
   color: #eee;
   margin-bottom: 2rem;
+  animation-name: moveTextRight;
+  animation-duration: 2.5s ;
 }
 
 button {
@@ -171,13 +179,51 @@ button {
 
 .btn-left {
   background-color: #F2D43D;
-  color: #010D00
+  color: #010D00;
+  animation-name: fadeButtons;
+  animation-duration: 1s;
+  animation-delay: 1.5s;
+  animation-fill-mode: backwards;
 }
 
 .btn-right {
   background-color: transparent;
-  color: #F2D43D
+  color: #F2D43D;
+  animation-name: fadeButtons;
+  animation-duration: 1s;
+  animation-delay: 2.3s;
+  animation-fill-mode: backwards;
 }
+
+@keyframes moveTextLeft {
+  0% {
+    transform: translateX(120px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes moveTextRight {
+  0% {
+    transform: translateX(-120px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeButtons {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 
 /* ----------------------------end project styling ---------------------------- */
 @media screen and (min-width: 992px) {
