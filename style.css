@@ -224,15 +224,19 @@ button {
   100% {
     opacity: 1;
   }
+}
 
 /* ----------------------------end project styling ---------------------------- */
-@media screen and (min-width: 992px) {
-  .section-center {
-    width: 95vw;
+@media screen and (max-width: 600px) {
+
+  .banner h1 {
+    font-size: 4rem;
+    color: #fff;
   }
+
+.banner span {
+  font-size: 4rem;
 }
-main {
-  min-height: 100vh;
-  display: grid;
-  place-items: center;
+
+
 }
