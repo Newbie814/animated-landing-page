@@ -175,6 +175,15 @@ button {
  outline: none;
  letter-spacing: 1px;
  cursor: pointer;
+ transition: all 0.3s;
+}
+button:hover {
+transform: scale(1.05);
+transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
 }
 
 .btn-left {
@@ -184,15 +193,27 @@ button {
   animation-duration: 1s;
   animation-delay: 1.5s;
   animation-fill-mode: backwards;
+  font-weight: 700;
+}
+
+.btn-left:hover {
+    color: #fff;
+     background-color: #f2d43d44;
 }
 
 .btn-right {
   background-color: transparent;
   color: #F2D43D;
+  font-weight: 700;
   animation-name: fadeButtons;
   animation-duration: 1s;
   animation-delay: 2.3s;
   animation-fill-mode: backwards;
+}
+
+.btn-right:hover {
+    color: #fff;
+     background-color: #f2d43d44;
 }
 
 @keyframes moveTextLeft {
